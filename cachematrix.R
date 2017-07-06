@@ -24,7 +24,7 @@ makeCacheMatrix <- function(x = matrix()) {
         ## get inverse
         getinverse <- function() inverseMatrix
         
-        ##
+        ## return the functions
         list(set = set, get = get,
              setinverse = setinverse,
              getinverse = getinverse)
@@ -55,8 +55,8 @@ cacheSolve <- function(x, ...) {
 
 
 ## To test run
-## x <- rbind(c(2, -3), c(-3,2))    ## make a matrix
-## m <- makeCacheMatrix(x)			## create the special matrix
-## m$get()							## get the matrix (should be same as x)
-## cacheSolve(m)					## get the inverse
-## cacheSolve(m)					## get the cached inverse
+## x <- rbind(c(2, -3), c(-3,2))    	## make a matrix
+## m <- makeCacheMatrix(x)				## create the special matrix
+## m$get()								## get the matrix (should be same as x)
+## cacheSolve(m)						## get the inverse
+## cacheSolve(m)						## get the cached inverse
