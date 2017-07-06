@@ -53,8 +53,19 @@ cacheSolve <- function(x, ...) {
 
 
 ## To test run
-## x <- rbind(c(2, -3), c(-3,2))    	## make a matrix
-## m <- makeCacheMatrix(x)				## create the special matrix
-## m$get()								## get the matrix (should be same as x)
-## cacheSolve(m)						## get the inverse
-## cacheSolve(m)						## get the cached inverse
+## make a matrix:
+## x <- rbind(c(2, -3), c(-3,2))    
+
+## create the special matrix
+## m <- makeCacheMatrix(x)	
+
+## get the matrix (should be same as x)			
+## m$get()			
+
+## get the inverse					
+## cacheSolve(m)		
+
+## retrieve the cached inverse				
+## cacheSolve(m)						
+
+
